@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+  <key>Label</key>
+  <string>com.openai.tunnel-client.supermemory</string>
+  <key>ProgramArguments</key>
+  <array>
+    <string>/Users/victor/.local/bin/tunnel-client</string>
+    <string>run</string>
+    <string>--control-plane.tunnel-id</string>
+    <string>tunnel_6ab88db0c1948191b6b2f0b9f90ec87b</string>
+    <string>--control-plane.api-key=file:/Users/victor/.local/share/tunnel-client/runtime-api-key</string>
+    <string>--mcp.server-url</string>
+    <string>url=http://127.0.0.1:4589/mcp,channel=main</string>
+    <string>--health.listen-addr</string>
+    <string>127.0.0.1:4590</string>
+    <string>--log.level</string>
+    <string>info</string>
+    <string>--log.format</string>
+    <string>struct-text</string>
+  </array>
+  <key>WorkingDirectory</key>
+  <string>/Users/victor</string>
+  <key>EnvironmentVariables</key>
+  <dict>
+    <key>PATH</key>
+    <string>/usr/local/bin:/Users/victor/.local/bin:/usr/bin:/bin:/usr/sbin:/sbin</string>
+  </dict>
+  <key>RunAtLoad</key>
+  <true/>
+  <key>KeepAlive</key>
+  <true/>
+  <key>StandardOutPath</key>
+  <string>/Users/victor/Library/Logs/tunnel-client-supermemory.stdout.log</string>
+  <key>StandardErrorPath</key>
+  <string>/Users/victor/Library/Logs/tunnel-client-supermemory.stderr.log</string>
+</dict>
+</plist>

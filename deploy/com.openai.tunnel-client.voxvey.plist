@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+  <key>Label</key>
+  <string>com.openai.tunnel-client.voxvey</string>
+  <key>ProgramArguments</key>
+  <array>
+    <string>/Users/victor/.local/bin/tunnel-client</string>
+    <string>run</string>
+    <string>--control-plane.tunnel-id</string>
+    <string>tunnel_6ab89601056881919cdff25b5893359d</string>
+    <string>--control-plane.api-key=file:/Users/victor/.local/share/tunnel-client/runtime-api-key</string>
+    <string>--mcp.server-url</string>
+    <string>url=https://api.voxvey.com/mcp,channel=main</string>
+    <string>--mcp.extra-headers</string>
+    <string>x-bf-vk: file:/Users/victor/.local/share/tunnel-client/voxvey-api-key</string>
+    <string>--health.listen-addr</string>
+    <string>127.0.0.1:4591</string>
+    <string>--log.level</string>
+    <string>info</string>
+    <string>--log.format</string>
+    <string>struct-text</string>
+  </array>
+  <key>WorkingDirectory</key>
+  <string>/Users/victor</string>
+  <key>EnvironmentVariables</key>
+  <dict>
+    <key>PATH</key>
+    <string>/usr/local/bin:/Users/victor/.local/bin:/usr/bin:/bin:/usr/sbin:/sbin</string>
+  </dict>
+  <key>RunAtLoad</key>
+  <true/>
+  <key>KeepAlive</key>
+  <true/>
+  <key>StandardOutPath</key>
+  <string>/Users/victor/Library/Logs/tunnel-client-voxvey.stdout.log</string>
+  <key>StandardErrorPath</key>
+  <string>/Users/victor/Library/Logs/tunnel-client-voxvey.stderr.log</string>
+</dict>
+</plist>
